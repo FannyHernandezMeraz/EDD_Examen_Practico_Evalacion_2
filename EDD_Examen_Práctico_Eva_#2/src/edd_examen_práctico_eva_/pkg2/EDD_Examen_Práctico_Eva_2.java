@@ -20,11 +20,13 @@ public class EDD_Examen_Práctico_Eva_2 {
         System.out.println("Introduzca el numero de datos que desea capturar:");
         int q = s.nextInt();
         for (int i = 0; i <= q; i++) {
-            ab.agregar(s.nextLine());
+            val =s.nextLine();
+            ab.agregar(val);
         }
         ab.inOrder();
         val = s.nextLine();
-        //ab.borrar(, val);
+        ab.borrar(root, val);
+        ab.inOrder();
     }
 
 }

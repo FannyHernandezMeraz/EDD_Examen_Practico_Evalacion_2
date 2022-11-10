@@ -6,6 +6,7 @@ package edd_examen_práctico_eva_.pkg2;
 public class Nodo {
 
     private String valor;
+    
     private Nodo derecha;
     private Nodo izquierda;
 

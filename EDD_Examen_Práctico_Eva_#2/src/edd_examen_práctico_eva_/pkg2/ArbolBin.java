@@ -130,6 +130,17 @@ public class ArbolBin {
         return n;
     }
     
+    public Nodo predecesor(Nodo n){
+        if (n==null) {
+            return null;
+        }
+        Nodo temp =  n.getIzquierda();
+        while(temp.getDerecha()!=null){
+            temp = temp.getDerecha();
+        }
+        return temp;
+    }
+    
     public Nodo sucesor(Nodo n){
         if (n==null) {
             return null;
